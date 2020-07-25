@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Robótica</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/historia.css">
+    <link rel="stylesheet" href="/css/cssmg.css">
+    <!-- movimiento de imagenes -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Red+Hat+Text:400,500,700&display=swap" rel="stylesheet">
+<style>
+    .swiper-container {
+      width: 90%;
+      height: 90%;
+      background: rgb(0,0,0);
+    }
+/** letras **/
+    .swiper-slide {
+      font-size: 18px;
+      color: rgb(255,255,255);
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      padding: 10px 0px;
+      align-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide .title {
+      font-size: 40px;
+      margin: 40px;
+    }
+
+    .swiper-slide .subtitle {
+      margin: 40px 60px 60px 20px;
+      font-size: 22px;
+      max-width: 500px;
+      line-height: 1.6;
+    }
+    
+    /** Reducir imagenes **/
+    @media only screen and (max-width:590px){
+    .s{
+        flex-direction: column;
+    }
+    .swiper-container{width: 90%;
+        margin-bottom:2%; }
+    .swiper-slide .title{margin: 36px; margin-top: -440px; width:0%;}
+    .swiper-slide .subtitle{margin:-30px; margin-top: 570px; width:85%; font-size: 20px; margin-bottom: 8%;}
+    }
+    </style>
+</head>
+<body>
+
+  <!-- boton deslizar arriba -->
+  <div class="go-top">
+    <span class="fas fa-angle-up"></span>
+  </div>
+
+<!-- Para mi menú -->
+   <header>
+    <nav class="menu">
+     <div class="Tema">
+       <h1><a href="/index.html">Robótica</a></h1>
+       <span class="btnmenu"><i class="fas fa-bars"></i></span>
+     </div>
+     
+     <div class="list-container">
+        <ul class="lists">
+            <li><a href="/index.html" class="active">Principal</a></li>
+            <li><a href="/cont/historia.html">Historia</a></li>
+            <li><a href="/cont/Estructura.html">Estructura</a></li>
+            <li><a href="/cont/Form.html">Contactanos</a></li>
+        </ul>
+     </div>
+    </nav>
+ 
+    <!-- Imagen de el encabezado -->
+    <div class="img-header">
+    <div class="circle" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: ; fill: #fff"></path></svg></div>
+     <div class="welcome">
+       <h1>La Robótica</h1>
+     </div>       
+    </div>
+
+    </header>
+
+ <main>
+
+    <!-- Historia -->
+    <section class="acerca-de">
+    <div class="info-container">
+      <h1>Historia de la robótica</h1>
+      <p>La historia de la robótica antigua es importante para conocer cómo funcionan los nuevos robots. 
+      La fabricación de máquinas que imitan al ser humano se ha mantenido desde hace más de 4000 años. 
+      En la robótica clásica destacaron inventores como Arquitas de Tarento (hacia 400 a.C.), 
+      Heron de Alejandría, Hsieh-Fec, AlJazari, Bacon, Turriano, Leonardo da Vinci, Vaucanson o von 
+      Kempelen.
+      En 1942 Asimovpublica las tres leyes de la robótica. Con el desarrollo de 
+      la mecánica, la electrónica y la informática en el siglo XX se han desarrollado robots capaces de 
+      realizar de forma autónoma tareas de gran complejidad.</p>
+       
+    <div class="swiper-container">
+    <div class="swiper-wrapper">
+     <!-- Informacion 1 del cuadro -->
+      <div class="swiper-slide">
+        <div class="title"><img src="/img/Arquitas.jpg"></div>
+        <div class="subtitle">
+             Arquitas. Fue comandante en tres guerras, y strategos de Tarento durante siete años (indicativo de su prestigio social ya que la ley prohibía la reelección más de un año. Condujo una reforma política en Tarento mediante la que llegó a ser la ciudad más rica y poblada de la Magna Grecia. A través de la construcción de memoriales, templos y otros edificios le dio lustre a la ciudad. Ayudó a dar nuevos impulsos al comercio al buscar asociaciones con Istria, Grecia y África.
+        </div>
+      </div>
+      <!-- Informacion 2 del cuadro -->
+      <div class="swiper-slide">
+        <div class="title"><img src="/img/Heron.jpg"></div>
+        <div class="subtitle">
+             Heron. Fue un ingeniero y matemático helenístico que destacó en Alejandría (en la provincia romana de Egipto); ejerció de ingeniero en su ciudad.Este griego es considerado uno de los científicos e inventores más grandes de la antigüedad y su trabajo es representativo de la tradición científica.Uno de sus mayores logros fue la invención de la primera máquina de vapor, conocida como eolípila, cuya aplicación práctica en los templos le granjeó el pseudónimo de el Mago. 
+        </div>
+      </div>
+      <!-- Informacion 3 del cuadro -->
+      <div class="swiper-slide">
+        <div class="title"><img src="/img/AlJazari.jpg"></div>
+        <div class="subtitle">
+             Abū al-'Iz Ibn Ismā'īl ibn al-Razāz al-Jazarīfue un científico de origen árabe,reconocido como un importante erudito, artista, astrónomo, inventor e ingeniero mecánico proveniente de Mesopotamia, que destacó durante la Edad de Oro del Islam en la Edad Media. Es famoso por haber escrito "El libro del conocimiento de dispositivos mecánicos ingeniosos".En 1206, donde describió 100 dispositivos mecánicos con instrucciones sobre cómo construirlos.
+        </div>
+      </div>
+      <!-- Informacion 4 del cuadro -->
+      <div class="swiper-slide">
+        <div class="title"><img src="/img/Turriano.jpg"></div>
+        <div class="subtitle">
+             Juanelo Turriano o Janello Torriani. Fue un ingeniero e inventor hispano-milanés. Nacido en Cremona hacia 1500. Llegó a España en el año 1556 llamado por Carlos I, y ya como Juanelo Turriano, fue nombrado Relojero de Corte y construyó para este rey dos famosos relojes astronómicos, el Mocrocosmo y el Cristalino que le hizo ser conocido en su época, porque eran capaz de indicar la posición de los astros en cada momento, con objeto de interpretaciones astrológicas.
+        </div>
+      </div>
+      <!-- Informacion 5 del cuadro -->
+      <div class="swiper-slide">
+        <div class="title"><img src="/img/Leonardo.jpg"></div>
+        <div class="subtitle">
+             Leonardo da Vinci Loudspeaker.svg escuchar. Fue un polímata florentino del Renacimiento italiano. Fue a la vez pintor, anatomista, arquitecto, paleontólogo, artista, botánico, científico, escritor, escultor, filósofo, ingeniero, inventor, músico, poeta y urbanista. Estudió con el pintor florentino Andrea de Verrocchio. Sus primeros trabajos de importancia fueron creados en Milán al servicio del duque Ludovico Sforza. Trabajó a continuación en Roma, Bolonia y Venecia.
+        </div>
+      </div>
+      <!-- Informacion 6 del cuadro -->
+      <div class="swiper-slide">
+        <div class="title"><img src="/img/Vaucanson.jpg"></div>
+        <div class="subtitle">
+             Jacques de Vaucanson. Fue un ingeniero e inventor francés considerado el creador del primer robot y del primer telar completamente automatizado. Nació en Grenoble, Francia, en 1709, con el nombre de Jacques Vaucanson. Hijo de un fabricante de guantes, se crio en la pobreza y ya en su juventud dijo que aspiraba a ser relojero. Fue así como un día, cuando estaba en la iglesia, observó detenidamente el reloj de la capilla y consiguió fabricar uno parecido semanas más tarde. 
+        </div>
+      </div>
+      
+      </div>
+    </div>
+    
+    <!-- Add Pagination -->
+    <div class="swiper-pagination swiper-pagination-white"></div>
+    <p>En 1985 el robot PUMA 560 fue utilizado para introducir una aguja en el cerebro. A partir de ahí 
+      se desarrollan robots cirujanos como World First, Robodoc, Gaspar o Acrobot, Zeus, AESOP, Probot o 
+      PAKI-RCP. En el año 2000 la FDA aprueba el da Vinci Surgical System (Intuitive Surgical Inc,Sunnyvale, 
+      CA, USA) un sofisticado robot asistente del cirujano. Procedimientos urológicos como la prostatectomía, 
+      cistectomía o la nefrectomía son realizadas con el robot da Vinci, situando a la urología como una de 
+      las especialidades más idóneas para la cirugía robótica</p>
+  </div>
+    </section>
+  
+ </main> 
+   
+   <!-- Footer -->
+ <footer class="footer">
+  <div class="deg-footer"></div>
+  <div class="ejeZfooter">
+  <div class="footer-content">
+   <div class="footer-text">
+     <p>Alumno: Ponciano Moya Alfredo Javier.</p>
+   </div>
+  
+  </div>
+</div>
+ </footer>
+
+<!-- Scripts -->
+<script src="https://kit.fontawesome.com/35db202371.js"></script>
+<script src="/js/app.js"></script>
+  <!-- Imagines -->  
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="/js/js.js"></script>
+
+</body>
+</html>
